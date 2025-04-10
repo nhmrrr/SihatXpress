@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="with-page-objects.google"
+    errors="1" failures="1" hostname="" id="" package="with-page-objects" skipped="0"
+    tests="1" time="18.70" timestamp="">
+  
+    <testcase name="should find nightwatch.js in results" classname="with-page-objects.google" time="7.831" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Expected element &lt;Section [name=menu],Element [name=@videos[0]]&gt; to be visible - element was not found - expected &#34;visible&#34; but got: &#34;not found&#34; (5112ms)">    at DescribeInstance.&lt;anonymous&gt; (C:\xampp\htdocs\ucj-main\nightwatch\examples\with-page-objects\google.js:30:24)</failure>
+
+    
+    <error type="error"><![CDATA[
+    NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+    at Object.throwDecodedError (C:\xampp\htdocs\ucj-main\node_modules\selenium-webdriver\lib\error.js:521:15)
+    at parseHttpResponse (C:\xampp\htdocs\ucj-main\node_modules\selenium-webdriver\lib\http.js:514:13)
+    at Executor.execute (C:\xampp\htdocs\ucj-main\node_modules\selenium-webdriver\lib\http.js:446:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Driver.execute (C:\xampp\htdocs\ucj-main\node_modules\selenium-webdriver\lib\webdriver.js:744:17)
+    at async Driver.findElements (C:\xampp\htdocs\ucj-main\node_modules\selenium-webdriver\lib\webdriver.js:1072:17)
+    at async MethodMappings.locateMultipleElements (C:\xampp\htdocs\ucj-main\node_modules\nightwatch\lib\transport\selenium-webdriver\method-mappings.js:386:31)
+    at async Object.locateMultipleElements (C:\xampp\htdocs\ucj-main\node_modules\nightwatch\lib\transport\selenium-webdriver\actions.js:69:18)
+    at async LocateElement.findElement (C:\xampp\htdocs\ucj-main\node_modules\nightwatch\lib\element\locator.js:167:20)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchWindowError
+   no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

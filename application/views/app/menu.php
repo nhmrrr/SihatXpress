@@ -2,7 +2,7 @@
 						<!--begin::Logo-->
 						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
 							<a href="<?=base_url('app')?>">
-								<img alt="Logo" src="<?=base_url()?>assets/logo/logo-tran.png" class="h-20px h-lg-30px app-sidebar-logo-default" />
+							<img alt="Logo" src="<?=base_url()?>assets/logo/logo-tran.png" class="h-80px h-lg-100px app-sidebar-logo-default" />
 							</a>
 						</div>
 						<!--end::Logo-->
@@ -712,24 +712,12 @@
 								*/?>
 								<!--end::Activities-->
 								<!--begin::Chat-->
-								<div class="app-navbar-item ms-1 ms-md-4">
-									<!--begin::Menu wrapper-->
-									<div class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px position-relative" id="kt_drawer_chat_toggle">
-										<i class="ki-duotone ki-message-text-2 fs-2">
-											<span class="path1"></span>
-											<span class="path2"></span>
-											<span class="path3"></span>
-										</i>
-										<span class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink"></span>
-									</div>
-									<!--end::Menu wrapper-->
-								</div>
 								<!--end::Chat-->
 								<!--begin::Theme mode-->
 								<div class="app-navbar-item ms-1 ms-md-4">
 									<!--begin::Menu toggle-->
 									<a href="#" class="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-35px h-35px" data-kt-menu-trigger="{default:'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-										<i class="ki-duotone ki-night-day theme-light-show fs-1">
+										<i class="ki-duotone ki-night-day theme-light-show fs-1 text-dark">
 											<span class="path1"></span>
 											<span class="path2"></span>
 											<span class="path3"></span>
@@ -741,7 +729,7 @@
 											<span class="path9"></span>
 											<span class="path10"></span>
 										</i>
-										<i class="ki-duotone ki-moon theme-dark-show fs-1">
+										<i class="ki-duotone ki-moon theme-dark-show fs-1 text-dark">
 											<span class="path1"></span>
 											<span class="path2"></span>
 										</i>
@@ -805,7 +793,7 @@
 								<!--begin::User menu-->
 								<div class="app-navbar-item ms-1 ms-md-4" id="kt_header_user_menu_toggle">
 									<!--begin::Menu wrapper-->
-									<div class="cursor-pointer symbol symbol-35px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+									<div class="cursor-pointer symbol symbol-30px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
 										<img src="<?=base_url()?>assets/media/avatars/blank.png" class="rounded-3" alt="user" />
 									</div>
 									<!--begin::User account menu-->

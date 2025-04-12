@@ -196,7 +196,7 @@
 								<!--begin::Copyright-->
 								<div class="text-gray-900 order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">5&copy;</span>
-									<a href="" target="_blank" class="text-gray-800 text-hover-primary">UPSI Custom Jersey</a>
+									<a href="" target="_blank" class="text-gray-800 text-hover-primary">Sihat Xpress</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->

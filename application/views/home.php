@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Sihat Xpress</title>
@@ -59,7 +61,7 @@
     color: #89CFF0 !important;
   }
   .section-title p {
-    color: #7BA4D9 !important;
+    color:rgb(5, 147, 228) !important;
   }
   label {
     color: #7BA4D9 !important;
@@ -125,18 +127,20 @@
 <body class="index-page">
 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
+
   <main class="main">
 
     </section><!-- /Portfolio Section -->
+    
     <section id="hero" class="hero section background">
     <img src="<?=base_url()?>/assets-landing/img/2.png?v=<?= time() ?>" alt="Portfolio" style="width: 100%; height: 100%; object-fit: cover;">
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2><span style="color:rgb(255, 0, 0);">Sihat</span> <span style="color:#89CFF0;">Xpress</span></h2>
+      
+        <h2><span style="color:rgb(255, 0, 0);">Sihat</span> <span style="color:rgb(5, 147, 228);">Xpress</span></h2>
         <p style="color:rgb(0, 0, 0);">Sign in or create an account to begin your personalized healthcare journey</p>
       </div><!-- End Section Title -->
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -148,11 +152,11 @@
               <div class="col-lg-12">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200" style="border-radius: 7px; padding: 30px; min-height: 250px; background-color: white !important;">
                   <div style="position: relative; margin-bottom: 20px;">
-                    <div style="width: 80px; height: 80px; border: 2px dotted #20B2AA; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center;">
-                      <i class="bi bi-clipboard2-pulse" style="color: #20B2AA !important; font-size: 2rem;"></i>
+                    <div style="width: 80px; height: 80px; border: 2px dotted #89CFF0; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center;">
+                      <i class="bi bi-clipboard2-pulse" style="color: #89CFF0 !important; font-size: 2rem;"></i>
                     </div>
                   </div>
-                  <h3 style="color: #20B2AA !important; margin-bottom: 15px;">Diagnosis</h3>
+                  <h3 style="color: #89CFF0 !important; margin-bottom: 15px;">Diagnosis</h3>
                   <p style="color: #7BA4D9 !important; text-align: center;">Get real-time medical advice from certified doctors and conduct easy self-health assessments.</p>
                 </div>
               </div>
@@ -173,11 +177,11 @@
               <div class="col-md-6">
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400" style="border-radius: 7px; padding: 30px; min-height: 250px; background-color: white !important;">
                   <div style="position: relative; margin-bottom: 20px;">
-                    <div style="width: 80px; height: 80px; border: 2px dotted #98FB98; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center;">
-                      <i class="bi bi-play" style="color: #98FB98 !important; font-size: 2rem;"></i>
+                    <div style="width: 80px; height: 80px; border: 2px dotted #89CFF0; border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center;">
+                      <i class="bi bi-play" style="color: #89CFF0 !important; font-size: 2rem;"></i>
                     </div>
                   </div>
-                  <h3 style="color: #98FB98 !important; margin-bottom: 15px;">Begin</h3>
+                  <h3 style="color: #89CFF0 !important; margin-bottom: 15px;">Begin</h3>
                   <p style="color: #7BA4D9 !important; text-align: center;">Select an option to start this interactive health experience.</p>
                 </div>
               </div><!-- End Info Item -->
@@ -380,6 +384,22 @@
             input.value = value.replace(/./g, "•");
         });
     </script>
+
+<?php if($this->session->flashdata('success')): ?>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        Swal.fire({
+            title: 'Success!',
+            text: "<?= $this->session->flashdata('success') ?>",
+            icon: 'success',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#89CFF0' // Bootstrap primary blue
+        });
+    });
+</script>
+<?php endif; ?>
+
+
 
 </body>
 

@@ -15,7 +15,7 @@ License: For each use you must have a valid license purchased only from above li
 	<? $this->load->view('template/header'); ?>
 	<!--end::Head-->
 	<!--begin::Body-->
-	<body id="kt_app_body" data-kt-app-layout="dark-header" data-kt-app-header-fixed="true" data-kt-app-toolbar-enabled="true" class="app-default">
+	<body id="kt_app_body" data-kt-app-layout="default" data-kt-app-header-fixed="true" data-kt-app-toolbar-enabled="true" class="app-default">
 		<!--begin::Theme mode setup on page load-->
 		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
 		<!--end::Theme mode setup on page load-->
@@ -4023,7 +4023,10 @@ License: For each use you must have a valid license purchased only from above li
 </html>
 
 <style>
-  .navbar {
-    background-color: transparent !important;
+  .app-header {
+    background-color: #0593E4 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
   }
 </style>
+
+

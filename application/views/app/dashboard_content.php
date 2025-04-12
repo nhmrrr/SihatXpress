@@ -8,26 +8,31 @@
 									<!--begin::Page title-->
 									<div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
 										<!--begin::Title-->
-										<h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0">Welcome Rachael</h1>
+										<h1 class="page-heading d-flex text-gray-900 fw-bold display-3 flex-column justify-content-center my-0">
+											Welcome, <?= $this->session->userdata('name') ?>
+										</h1>
+
 										<!--end::Title-->
 										<!--begin::Breadcrumb-->
 										<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
 											<!--begin::Item-->
-											<li class="breadcrumb-item text-muted">
+											<!--<li class="breadcrumb-item text-muted">
 												<a href="<?=base_url('app')?>" class="text-muted text-hover-primary">Home</a>
-											</li>
+											</li>-->
 											<!--end::Item-->
 											<!--begin::Item-->
-											<li class="breadcrumb-item">
+											<!--<li class="breadcrumb-item">
 												<span class="bullet bg-gray-500 w-5px h-2px"></span>
+											
 											</li>
 											<!--end::Item-->
 											<!--begin::Item-->
-											<li class="breadcrumb-item text-muted">Jersey Customize</li>
+											<!--<li class="breadcrumb-item text-muted">Jersey Customize</li>-->
 											<!--end::Item-->
 										</ul>
 										<!--end::Breadcrumb-->
-										<p>Please select one of the options below to start</p>
+										<p class="fs-3">Please select one of the options below to start</p>
+
 									</div>
 									<!--end::Page title-->
 								
@@ -36,34 +41,40 @@
 							</div>
 							<!--end::Toolbar-->
 							<!--begin::Content-->
-							<div id="kt_app_content" class="app-content flex-column-fluid">
-								<!--begin::Content container-->
-								<div id="kt_app_content_container" class="app-container container-xxl">
-									<!--begin::Row-->
-									<div class="row g-5 gx-xl-10 mb-5 mb-xl-10">
-										<!--begin::Col-->
-										<div class="col-md-6">
-											<div class="card card-flush h-md-100">
-												<div class="card-body d-flex flex-column justify-content-center align-items-center">
-													<img src="" alt="Self Check Up" style="width: 100px; height: auto;">
-													<h3>Self Check Up</h3>
-													<button onclick="selfCheckUp()" class="btn btn-primary mt-3">Select</button>
-												</div>
-											</div>
+					<div id="kt_app_content" class="app-content flex-column-fluid">
+						<div id="kt_app_content_container" class="app-container container-xxl">
+							<div class="row g-5 gx-xl-10 mb-5 mb-xl-10">
+								<!-- Self Check Up -->
+								<div class="col-md-6">
+									<div id="card-self" class="card card-flush h-md-100 selectable-card" onclick="handleCardClick('card-self', 'self')">
+										<div class="card-body d-flex flex-column justify-content-center align-items-center">
+										<div class="card-info mt-3 text-center" style="display: none;">
+  										<p>Answer a few questions to assess your symptoms and receive a quick health summary.</p>
 										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-md-6">
-											<div class="card card-flush h-md-100">
-												<div class="card-body d-flex flex-column justify-content-center align-items-center">
-													<img src="" alt="Consult A Doctor" style="width: 100px; height: auto;">
-													<h3>Consult A Doctor</h3>
-													<button onclick="consultDoctor()" class="btn btn-primary mt-3">Select</button>
-												</div>
-											</div>
+
+											<img src="assets-landing/img/dashboard/telehealth.png" alt="Self Check Up" style="width: 200px; height: auto;">
+											<h3 class="custom-font">Self Check Up</h3>
+											<button class="btn btn-primary mt-3">Select</button>
 										</div>
-										<!--end::Col-->
 									</div>
+								</div>
+
+								<!-- Consult A Doctor -->
+								<div class="col-md-6">
+									<div id="card-consult" class="card card-flush h-md-100 selectable-card" onclick="handleCardClick('card-consult', 'consult')">
+										<div class="card-body d-flex flex-column justify-content-center align-items-center">
+										<div class="card-info mt-3 text-center" style="display: none;">
+  										<p>Talk to a certified doctor online for personalized medical advice and prescriptions.</p>
+										</div>
+											<img src="assets-landing/img/dashboard/consult.png" alt="Consult A Doctor" style="width: 200px; height: auto;">
+											<h3 class="custom-font">Consult A Doctor</h3>
+											<button class="btn btn-primary mt-3">Select</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 									<!--end::Row-->
 								
 									<?/*
@@ -457,7 +468,7 @@
 								<!--begin::Copyright-->
 								<div class="text-gray-900 order-2 order-md-1">
 									<span class="text-muted fw-semibold me-1">2025&copy;</span>
-									<a href="" target="_blank" class="text-gray-800 text-hover-primary">UPSI Custom Jersey</a>
+									<a href="" target="_blank" class="text-gray-800 text-hover-primary">SihatXpress</a>
 								</div>
 								<!--end::Copyright-->
 								<!--begin::Menu-->
@@ -470,12 +481,72 @@
 						<!--end::Footer-->
 					</div>
 					<script>
-						function selfCheckUp() {
-							alert('Self Check Up function selected.');
-						}
+						
+													function handleCardClick(cardId, action) {
+								// Remove selected class and hide info from all cards
+								document.querySelectorAll('.selectable-card').forEach(card => {
+									card.classList.remove('selected');
+									const info = card.querySelector('.card-info');
+									if (info) info.style.display = 'none';
+								});
 
-						function consultDoctor() {
-							alert('Consult A Doctor function selected.');
-						}
+								// Select the clicked card
+								const clickedCard = document.getElementById(cardId);
+								clickedCard.classList.add('selected');
+
+								// Show the info inside the clicked card
+								const infoBox = clickedCard.querySelector('.card-info');
+								if (infoBox) infoBox.style.display = 'block';
+
+								// Call specific action
+								if (action === 'self') {
+									selfCheckUp();
+								} else if (action === 'consult') {
+									consultDoctor();
+								}
+							}
+
+														document.addEventListener('click', function(event) {
+								const cards = document.querySelectorAll('.selectable-card');
+								let clickedInsideCard = false;
+
+								cards.forEach(card => {
+									if (card.contains(event.target)) {
+										clickedInsideCard = true;
+									}
+								});
+
+								if (!clickedInsideCard) {
+									cards.forEach(card => {
+										card.classList.remove('selected');
+										const info = card.querySelector('.card-info');
+										if (info) info.style.display = 'none';
+									});
+								}
+							});
+
 					</script>
 				</div>
+<style>
+    .selectable-card {
+        cursor: pointer;
+        transition: 0.3s;
+        border: 2px solid transparent;
+        border-radius: 10px;
+    }
+
+    .selectable-card:hover {
+        border-color: #0d6efd;
+        box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+    }
+
+    .selectable-card.selected {
+        background-color: #e6f0ff;
+        border-color: #0d6efd;
+    }
+	.custom-font {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+</style>

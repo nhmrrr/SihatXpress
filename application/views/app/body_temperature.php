@@ -102,58 +102,6 @@
                                                 <img src="assets/media/illustrations/temperature.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Temperature Tutorial" />
                                             </div>
                                             <!--end::Video tutorial-->
-                                            
-                                            <!--begin::Instructions-->
-                                            <div class="d-flex flex-column">
-                                                <h4 class="fw-bold text-gray-800 mb-3">Step-by-Step Instructions</h4>
-                                                <div class="d-flex flex-column gap-5">
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-success">
-                                                                <span class="fw-bold text-success">1</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Prepare the Thermometer</span>
-                                                            <span class="text-gray-600">Clean the thermometer with alcohol and ensure it's at room temperature.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-success">
-                                                                <span class="fw-bold text-success">2</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Choose Measurement Method</span>
-                                                            <span class="text-gray-600">Select your preferred method: oral, armpit, or forehead. Oral is most accurate.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-success">
-                                                                <span class="fw-bold text-success">3</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Take the Measurement</span>
-                                                            <span class="text-gray-600">Place the thermometer in position and wait for the beep or signal.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-success">
-                                                                <span class="fw-bold text-success">4</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Record the Result</span>
-                                                            <span class="text-gray-600">Note the temperature in Celsius or Fahrenheit, and any symptoms.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end::Instructions-->
                                         </div>
                                     </div>
                                     <!--end::Card-->
@@ -261,6 +209,72 @@
                                                 </a>
                                             </div>
                                             <!--end::Actions-->
+                                        </div>
+                                    </div>
+                                    <!--end::Card-->
+                                </div>
+                                <!--end::Col-->
+                            </div>
+                            <!--end::Row-->
+                            <!--begin::Row-->
+                            <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+                                <!--begin::Col-->
+                                <div class="col-xl-12">
+                                    <!--begin::Card-->
+                                    <div class="card card-flush h-xl-100">
+                                        <div class="card-header pt-7">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-gray-800">Step-by-Step Instructions</span>
+                                                <span class="text-gray-500 mt-1 fw-semibold fs-6">Follow these steps for accurate measurement</span>
+                                            </h3>
+                                        </div>
+                                        <div class="card-body pt-5">
+                                            <div class="d-flex flex-column gap-5">
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Prepare Yourself</span>
+                                                        <span class="text-gray-600">Sit quietly for 5 minutes before measuring. Avoid caffeine, exercise, and smoking for 30 minutes prior.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">2</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Position the Cuff</span>
+                                                        <span class="text-gray-600">Place the cuff on your bare upper arm at heart level. The bottom edge should be about 1 inch above your elbow.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Start the Measurement</span>
+                                                        <span class="text-gray-600">Press the start button and remain still. Don't talk during the measurement.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Record the Results</span>
+                                                        <span class="text-gray-600">Note both numbers: systolic (top) and diastolic (bottom) pressure in mmHg.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <!--end::Card-->

@@ -103,57 +103,7 @@
                                             </div>
                                             <!--end::Video tutorial-->
                                             
-                                            <!--begin::Instructions-->
-                                            <div class="d-flex flex-column">
-                                                <h4 class="fw-bold text-gray-800 mb-3">Best Practices for Weighing</h4>
-                                                <div class="d-flex flex-column gap-5">
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-primary">
-                                                                <span class="fw-bold text-primary">1</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Choose the Right Time</span>
-                                                            <span class="text-gray-600">Weigh yourself first thing in the morning, after using the bathroom and before eating or drinking.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-primary">
-                                                                <span class="fw-bold text-primary">2</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Use a Reliable Scale</span>
-                                                            <span class="text-gray-600">Place your scale on a hard, flat surface and ensure it's calibrated properly.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-primary">
-                                                                <span class="fw-bold text-primary">3</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Consistent Clothing</span>
-                                                            <span class="text-gray-600">Wear similar lightweight clothing each time you weigh yourself for consistent measurements.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="symbol symbol-30px me-3">
-                                                            <span class="symbol-label bg-light-primary">
-                                                                <span class="fw-bold text-primary">4</span>
-                                                            </span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <span class="fw-bold text-gray-800">Stand Properly</span>
-                                                            <span class="text-gray-600">Stand still on the scale with your weight evenly distributed on both feet.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end::Instructions-->
+                                           
                                         </div>
                                     </div>
                                     <!--end::Card-->

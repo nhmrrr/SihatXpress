@@ -88,24 +88,9 @@
                                             <div class="mt-5">
                                                 <div class="d-flex flex-column gap-5">
                                                     <div class="d-flex align-items-start">
-                                                        <span class="bullet bullet-vertical bg-primary h-40px w-3px"></span>
+                                                        
                                                         <div class="ms-4">
-                                                            <h4 class="text-dark fw-bold mb-2">1. Prepare the Device</h4>
-                                                            <p class="text-gray-600 fs-6">Ensure your pulse oximeter is clean and batteries are working</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex align-items-start">
-                                                        <span class="bullet bullet-vertical bg-primary h-40px w-3px"></span>
-                                                        <div class="ms-4">
-                                                            <h4 class="text-dark fw-bold mb-2">2. Position Your Finger</h4>
-                                                            <p class="text-gray-600 fs-6">Insert your index finger into the device, nail side up</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex align-items-start">
-                                                        <span class="bullet bullet-vertical bg-primary h-40px w-3px"></span>
-                                                        <div class="ms-4">
-                                                            <h4 class="text-dark fw-bold mb-2">3. Wait for Reading</h4>
-                                                            <p class="text-gray-600 fs-6">Keep your hand still until the reading stabilizes</p>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -115,7 +100,6 @@
                                     <!--end::Card-->
                                 </div>
                                 <!--end::Col-->
-                                
                                 <!--begin::Col-->
                                 <div class="col-xl-6">
                                     <!--begin::Card-->
@@ -213,6 +197,71 @@
                                 <!--end::Col-->
                             </div>
                             
+                            <!--begin::Card-->
+                            <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+                            <div class="col-xl-12">
+                            <div class="card card-flush h-xl-100">
+                                        <div class="card-header pt-7">
+                                            <h3 class="card-title align-items-start flex-column">
+                                                <span class="card-label fw-bold text-gray-800">Step-by-Step Instructions</span>
+                                                <span class="text-gray-500 mt-1 fw-semibold fs-6">Follow these steps for accurate measurement</span>
+                                            </h3>
+                                        </div>
+                                        <div class="card-body pt-5">
+                                            <div class="d-flex flex-column gap-5">
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Prepare Yourself</span>
+                                                        <span class="text-gray-600">Sit quietly for 5 minutes before measuring. Avoid caffeine, exercise, and smoking for 30 minutes prior.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">2</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Position the Cuff</span>
+                                                        <span class="text-gray-600">Place the cuff on your bare upper arm at heart level. The bottom edge should be about 1 inch above your elbow.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">3</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Start the Measurement</span>
+                                                        <span class="text-gray-600">Press the start button and remain still. Don't talk during the measurement.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="symbol symbol-30px me-3">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <span class="fw-bold text-success">4</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <span class="fw-bold text-gray-800">Record the Results</span>
+                                                        <span class="text-gray-600">Note both numbers: systolic (top) and diastolic (bottom) pressure in mmHg.</span>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end::Card-->
+                                </div>
+                                <!--end::Col-->
+                            </div>
+                            <!--end::Row-->
+
                             <!--begin::Row-->
                             <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
                                 <!--begin::Col-->
@@ -221,8 +270,8 @@
                                     <div class="card card-flush h-xl-100">
                                         <div class="card-header pt-7">
                                             <h3 class="card-title align-items-start flex-column">
-                                                <span class="card-label fw-bold text-dark">Understanding Your Results</span>
-                                                <span class="text-gray-400 mt-1 fw-semibold fs-6">What your measurements mean</span>
+                                                <span class="card-label fw-bold text-gray-800">Understanding Your Results</span>
+                                                <span class="text-gray-500 mt-1 fw-semibold fs-6">What your measurements mean</span>
                                             </h3>
                                         </div>
                                         <div class="card-body pt-5">

@@ -48,13 +48,11 @@
 								<div class="col-md-6">
 									<div id="card-self" class="card card-flush h-md-100 selectable-card" onclick="handleCardClick('card-self', 'self')">
 										<div class="card-body d-flex flex-column justify-content-center align-items-center">
-										<div class="card-info mt-3 text-center" style="display: none;">
-  										<p>Answer a few questions to assess your symptoms and receive a quick health summary.</p>
-										</div>
-
 											<img src="assets-landing/img/dashboard/telehealth.png" alt="Self Check Up" style="width: 200px; height: auto;">
 											<h3 class="custom-font">Self Check Up</h3>
-											<button class="btn btn-primary mt-3">Select</button>
+											<div class="card-info mt-3 text-center" style="display: none;">
+												<p>Answer a few questions to assess your symptoms and receive a quick health summary.</p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -63,19 +61,23 @@
 								<div class="col-md-6">
 									<div id="card-consult" class="card card-flush h-md-100 selectable-card" onclick="handleCardClick('card-consult', 'consult')">
 										<div class="card-body d-flex flex-column justify-content-center align-items-center">
-										<div class="card-info mt-3 text-center" style="display: none;">
-  										<p>Talk to a certified doctor online for personalized medical advice and prescriptions.</p>
-										</div>
 											<img src="assets-landing/img/dashboard/consult.png" alt="Consult A Doctor" style="width: 200px; height: auto;">
 											<h3 class="custom-font">Consult A Doctor</h3>
-											<button class="btn btn-primary mt-3">Select</button>
+											<div class="card-info mt-3 text-center" style="display: none;">
+												<p>Talk to a certified doctor online for personalized medical advice and prescriptions.</p>
+											</div>
 										</div>
 									</div>
 								</div>
+									<div id="next-button-container" style="display: none; width: 100%; margin-top: 10px; text-align: right;">
+										<button class="btn btn-next">Next</button>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-									<!--end::Row-->
+						</div> <!-- end of row -->
+					
+
+									
 								
 									<?/*
 									<!--begin::Row-->
@@ -481,50 +483,51 @@
 						<!--end::Footer-->
 					</div>
 					<script>
-						
-													function handleCardClick(cardId, action) {
-								// Remove selected class and hide info from all cards
-								document.querySelectorAll('.selectable-card').forEach(card => {
+						function handleCardClick(cardId, type) {
+							const selectedCard = document.getElementById(cardId);
+							const isAlreadySelected = selectedCard.classList.contains('selected');
+
+							// Unselect all cards and hide all descriptions
+							document.querySelectorAll('.selectable-card').forEach(card => {
+								card.classList.remove('selected');
+								card.querySelector('.card-info').style.display = 'none';
+							});
+
+							// If it was not selected before, select it and show info
+							if (!isAlreadySelected) {
+								selectedCard.classList.add('selected');
+								selectedCard.querySelector('.card-info').style.display = 'block';
+
+								// Show the Next button
+								document.getElementById('next-button-container').style.display = 'block';
+							} else {
+								// Hide the Next button if user unselects
+								document.getElementById('next-button-container').style.display = 'none';
+							}
+						}
+
+						// Detect clicks outside of cards
+						document.addEventListener('click', function(event) {
+							const cards = document.querySelectorAll('.selectable-card');
+							let clickedInsideCard = false;
+
+							cards.forEach(card => {
+								if (card.contains(event.target)) {
+									clickedInsideCard = true;
+								}
+							});
+
+							if (!clickedInsideCard) {
+								cards.forEach(card => {
 									card.classList.remove('selected');
 									const info = card.querySelector('.card-info');
 									if (info) info.style.display = 'none';
 								});
 
-								// Select the clicked card
-								const clickedCard = document.getElementById(cardId);
-								clickedCard.classList.add('selected');
-
-								// Show the info inside the clicked card
-								const infoBox = clickedCard.querySelector('.card-info');
-								if (infoBox) infoBox.style.display = 'block';
-
-								// Call specific action
-								if (action === 'self') {
-									selfCheckUp();
-								} else if (action === 'consult') {
-									consultDoctor();
-								}
+								// ✅ Hide the Next button when clicking outside
+								document.getElementById('next-button-container').style.display = 'none';
 							}
-
-														document.addEventListener('click', function(event) {
-								const cards = document.querySelectorAll('.selectable-card');
-								let clickedInsideCard = false;
-
-								cards.forEach(card => {
-									if (card.contains(event.target)) {
-										clickedInsideCard = true;
-									}
-								});
-
-								if (!clickedInsideCard) {
-									cards.forEach(card => {
-										card.classList.remove('selected');
-										const info = card.querySelector('.card-info');
-										if (info) info.style.display = 'none';
-									});
-								}
-							});
-
+						});
 					</script>
 				</div>
 <style>
@@ -541,12 +544,36 @@
     }
 
     .selectable-card.selected {
-        background-color: #e6f0ff;
-        border-color: #0d6efd;
+		border: 2px solid #0d6efd; /* Bootstrap primary color */
+		box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
     }
 	.custom-font {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 24px;
-}
+	}
+	.btn-next {
+		background: linear-gradient(to right, #007bff, #00c6ff);
+		color: white;
+		padding: 12px 28px;
+		font-size: 16px;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+		cursor: pointer;
+		transition: all 0.3s ease;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+	}
+
+	.btn-next:hover {
+		background: linear-gradient(to right, #0056b3, #009fc4);
+		transform: scale(1.05);
+		box-shadow: 0 12px 25px rgba(0, 123, 255, 0.4);
+	}
+
+	.btn-next:active {
+		transform: scale(0.98);
+		box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+	}
 </style>

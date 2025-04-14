@@ -600,4 +600,24 @@ class App extends CI_Controller {
         $this->load->view('app/consult_doctor');
     }
 
+    public function body_temperature() {
+        $this->load->view('app/body_temperature');
+    }
+
+    public function pulse_oxygen() {
+        $this->load->view('app/pulse_oxygen');
+    }
+
+    public function blood_pressure() {
+        $this->load->view('app/blood_pressure');
+    }
+
+    public function blood_glucose() {
+        $this->load->view('app/blood_glucose');
+    }
+
+    public function body_weight() {
+        $this->load->view('app/body_weight');
+    }
+
 }

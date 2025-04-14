@@ -50,12 +50,21 @@
                 <div class="row g-5 gx-xl-10 mb-5 mb-xl-10">
                     <!-- Pulse Rate & Oxygen -->
                     <div class="col-md-4 mb-5">
-                        <div class="card card-flush h-md-100 health-card" onclick="navigateToMeasurement('pulse-oxygen')">
+                        <div class="card card-flush h-md-100 health-card">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="assets-landing/img/health/pulse-oxygen.png" alt="Pulse Rate & Oxygen" style="width: 150px; height: auto; margin-bottom: 20px;">
                                 <h3 class="custom-font">Pulse Rate & Oxygen</h3>
                                 <div class="card-info mt-3 text-center">
                                     <p>Record your heart rate and blood oxygen levels</p>
+                                </div>
+                                <div class="mt-4">
+                                    <button onclick="navigateToMeasurement('pulse-oxygen')" class="btn btn-primary px-6">
+                                        <i class="ki-duotone ki-arrow-right fs-2">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                        Start Checkup
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -63,12 +72,21 @@
 
                     <!-- Blood Pressure -->
                     <div class="col-md-4 mb-5">
-                        <div class="card card-flush h-md-100 health-card" onclick="navigateToMeasurement('blood-pressure')">
+                        <div class="card card-flush h-md-100 health-card">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="assets-landing/img/health/blood-pressure.png" alt="Blood Pressure" style="width: 150px; height: auto; margin-bottom: 20px;">
                                 <h3 class="custom-font">Blood Pressure</h3>
                                 <div class="card-info mt-3 text-center">
                                     <p>Track your systolic and diastolic blood pressure</p>
+                                </div>
+                                <div class="mt-4">
+                                    <button onclick="navigateToMeasurement('blood-pressure')" class="btn btn-primary px-6">
+                                        <i class="ki-duotone ki-arrow-right fs-2">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                        Start Checkup
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -76,12 +94,21 @@
 
                     <!-- Body Temperature -->
                     <div class="col-md-4 mb-5">
-                        <div class="card card-flush h-md-100 health-card" onclick="navigateToMeasurement('body-temperature')">
+                        <div class="card card-flush h-md-100 health-card">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="assets-landing/img/health/temperature.png" alt="Body Temperature" style="width: 150px; height: auto; margin-bottom: 20px;">
                                 <h3 class="custom-font">Body Temperature</h3>
                                 <div class="card-info mt-3 text-center">
                                     <p>Record your body temperature readings</p>
+                                </div>
+                                <div class="mt-4">
+                                    <button onclick="navigateToMeasurement('body-temperature')" class="btn btn-primary px-6">
+                                        <i class="ki-duotone ki-arrow-right fs-2">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                        Start Checkup
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -89,12 +116,21 @@
 
                     <!-- Blood Glucose -->
                     <div class="col-md-4 mb-5">
-                        <div class="card card-flush h-md-100 health-card" onclick="navigateToMeasurement('blood-glucose')">
+                        <div class="card card-flush h-md-100 health-card">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="assets-landing/img/health/glucose.png" alt="Blood Glucose" style="width: 150px; height: auto; margin-bottom: 20px;">
                                 <h3 class="custom-font">Blood Glucose</h3>
                                 <div class="card-info mt-3 text-center">
                                     <p>Monitor your blood sugar levels</p>
+                                </div>
+                                <div class="mt-4">
+                                    <button onclick="navigateToMeasurement('blood-glucose')" class="btn btn-primary px-6">
+                                        <i class="ki-duotone ki-arrow-right fs-2">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                        Start Checkup
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -102,16 +138,36 @@
 
                     <!-- Body Weight -->
                     <div class="col-md-4 mb-5">
-                        <div class="card card-flush h-md-100 health-card" onclick="navigateToMeasurement('body-weight')">
+                        <div class="card card-flush h-md-100 health-card">
                             <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                 <img src="assets-landing/img/health/weight.png" alt="Body Weight" style="width: 150px; height: auto; margin-bottom: 20px;">
                                 <h3 class="custom-font">Body Weight</h3>
                                 <div class="card-info mt-3 text-center">
                                     <p>Track your weight changes over time</p>
                                 </div>
+                                <div class="mt-4">
+                                    <button onclick="navigateToMeasurement('body-weight')" class="btn btn-primary px-6">
+                                        <i class="ki-duotone ki-arrow-right fs-2">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                        Start Checkup
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                
+                <!-- Consult Doctor Button -->
+                <div class="d-flex justify-content-center mt-5 mb-10">
+                    <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-primary btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
+                        <i class="ki-duotone ki-message-text-2 fs-1 me-2">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                        <span class="fs-3">Consult a Doctor</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -136,13 +192,52 @@
 
 <script>
     function navigateToMeasurement(type) {
-        // For now, just show an alert
-        // In a real implementation, this would navigate to the specific measurement page
-        alert('Navigating to ' + type + ' measurement page');
-        
-        // Example of how you might implement actual navigation:
-        // window.location.href = '<?=base_url('app/measurement/')?>' + type;
+        // Navigate to the specific measurement page
+        switch(type) {
+            case 'pulse-oxygen':
+                window.location.href = '<?=base_url('app/pulse_oxygen')?>';
+                break;
+            case 'blood-pressure':
+                window.location.href = '<?=base_url('app/blood_pressure')?>';
+                break;
+            case 'body-temperature':
+                window.location.href = '<?=base_url('app/body_temperature')?>';
+                break;
+            case 'blood-glucose':
+                window.location.href = '<?=base_url('app/blood_glucose')?>';
+                break;
+            case 'body-weight':
+                window.location.href = '<?=base_url('app/body_weight')?>';
+                break;
+            default:
+                alert('Page not found');
+        }
     }
+
+    // Check completion status on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const measurements = ['pulse-oxygen', 'blood-pressure', 'body-temperature', 'blood-glucose', 'body-weight'];
+        measurements.forEach(type => {
+            if(localStorage.getItem(type + '_completed') === 'true') {
+                const card = document.querySelector(`[onclick="navigateToMeasurement('${type}')"]`).closest('.health-card');
+                if(card) {
+                    // Add completion indicator
+                    const indicator = document.createElement('div');
+                    indicator.className = 'position-absolute top-0 end-0 mt-3 me-3';
+                    indicator.innerHTML = `
+                        <span class="badge badge-circle badge-success">
+                            <i class="ki-duotone ki-check fs-2">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </i>
+                        </span>
+                    `;
+                    card.style.position = 'relative';
+                    card.appendChild(indicator);
+                }
+            }
+        });
+    });
 </script>
 
 <style>
@@ -170,5 +265,20 @@
     .card-info p {
         color: #6c757d;
         font-size: 14px;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .badge-circle {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
     }
 </style> 

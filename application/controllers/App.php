@@ -620,4 +620,9 @@ class App extends CI_Controller {
         $this->load->view('app/body_weight');
     }
 
+    public function self_checkup_summary()
+    {
+        $this->load->view('app/self_checkup_summary');
+    }
+
 }

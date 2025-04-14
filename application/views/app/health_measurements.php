@@ -34,9 +34,12 @@
                 <!--end::Page title-->
                 <!--begin::Actions-->
                 <div class="d-flex align-items-center gap-2 gap-lg-3">
-                    <a href="javascript:history.back()" class="btn btn-sm btn-primary">
-                        <i class="ki-duotone ki-arrow-left fs-2"></i>
-                        Back
+                    <a href="javascript:history.back()" class="btn btn-sm fw-bold btn-gradient-primary px-4 py-2 d-flex align-items-center">
+                        <i class="ki-duotone ki-arrow-left fs-2 me-2">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                        Back to Dashboard
                     </a>
                 </div>
                 <!--end::Actions-->
@@ -160,7 +163,14 @@
                 </div>
                 
                 <!-- Consult Doctor Button -->
-                <div class="d-flex justify-content-center mt-5 mb-10">
+                <div class="d-flex justify-content-center gap-3 mt-5 mb-10">
+                    <a href="<?=base_url('app/self_checkup_summary')?>" class="btn btn-success btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
+                        <i class="ki-duotone ki-document fs-1 me-2">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                        <span class="fs-3">Summary Self Check Up</span>
+                    </a>
                     <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-primary btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
                         <i class="ki-duotone ki-message-text-2 fs-1 me-2">
                             <span class="path1"></span>
@@ -280,5 +290,25 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+    }
+
+    .btn-gradient-primary {
+        background: linear-gradient(135deg, #009ef7 0%, #0054a6 100%);
+        border: none;
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 158, 247, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-gradient-primary:hover {
+        background: linear-gradient(135deg, #0054a6 0%, #009ef7 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 158, 247, 0.4);
+        color: white;
+    }
+    
+    .btn-gradient-primary:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 158, 247, 0.3);
     }
 </style> 

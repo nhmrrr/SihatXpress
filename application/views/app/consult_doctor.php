@@ -42,7 +42,7 @@
                                 <!--begin::Breadcrumb-->
                                 <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                                     <li class="breadcrumb-item text-muted">
-                                        <a href="<?=base_url('app')?>" class="text-muted text-hover-primary">Home</a>
+                                        <a href="javascript:void(0)" onclick="confirmTerminateSession()" class="text-muted text-hover-primary">Home</a>
                                     </li>
                                     <li class="breadcrumb-item">
                                         <span class="bullet bg-gray-400 w-5px h-2px"></span>
@@ -54,9 +54,12 @@
                             <!--end::Page title-->
                             <!--begin::Actions-->
                             <div class="d-flex align-items-center gap-2 gap-lg-3">
-                                <a href="javascript:history.back()" class="btn btn-sm fw-bold btn-primary">
-                                    <i class="ki-duotone ki-arrow-left fs-2"></i>
-                                    Back
+                                <a href="javascript:void(0)" onclick="confirmTerminateSession()" class="btn btn-sm fw-bold btn-gradient-primary px-4 py-2 d-flex align-items-center">
+                                    <i class="ki-duotone ki-arrow-left fs-2 me-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                    Back to Dashboard
                                 </a>
                             </div>
                             <!--end::Actions-->
@@ -362,7 +365,53 @@
     <script src="<?= base_url('assets/js/custom/utilities/modals/create-app.js')?>"></script>
     <script src="<?= base_url('assets/js/custom/utilities/modals/new-target.js')?>"></script>
     <script src="<?= base_url('assets/js/custom/utilities/modals/users-search.js')?>"></script>
+    
+    <!-- Terminate Session Confirmation -->
+    <script>
+        function confirmTerminateSession() {
+            Swal.fire({
+                title: 'Terminate Session?',
+                text: 'Are you sure you want to leave the consultation page?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, leave page',
+                cancelButtonText: 'No, stay here',
+                reverseButtons: true,
+                padding: '2em',
+                customClass: {
+                    confirmButton: 'btn btn-primary',
+                    cancelButton: 'btn btn-light'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '<?=base_url('app')?>';
+                }
+            });
+        }
+    </script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
+
+    <style>
+        .btn-gradient-primary {
+            background: linear-gradient(135deg, #009ef7 0%, #0054a6 100%);
+            border: none;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 158, 247, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient-primary:hover {
+            background: linear-gradient(135deg, #0054a6 0%, #009ef7 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 158, 247, 0.4);
+            color: white;
+        }
+        
+        .btn-gradient-primary:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 158, 247, 0.3);
+        }
+    </style>
 </body>
 <!--end::Body--> 

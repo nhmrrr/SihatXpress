@@ -528,6 +528,27 @@
 								document.getElementById('next-button-container').style.display = 'none';
 							}
 						});
+
+						// Add event listener for the Next button
+						document.addEventListener('DOMContentLoaded', function() {
+							const nextButton = document.querySelector('.btn-next');
+							if (nextButton) {
+								nextButton.addEventListener('click', function() {
+									// Get the selected card
+									const selectedCard = document.querySelector('.selectable-card.selected');
+									if (selectedCard) {
+										const cardId = selectedCard.id;
+										if (cardId === 'card-self') {
+											// Navigate to the health measurements page
+											window.location.href = '<?=base_url('app/health_measurements')?>';
+										} else if (cardId === 'card-consult') {
+											// Navigate to the consult doctor page
+											window.location.href = '<?=base_url('app/consult_doctor')?>';
+										}
+									}
+								});
+							}
+						});
 					</script>
 				</div>
 <style>

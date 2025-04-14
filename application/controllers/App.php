@@ -577,5 +577,27 @@ class App extends CI_Controller {
 		exit;
 	}
 
+    public function health_measurements($data=false)
+    {
+        $data['content'] = 'app/health_measurements';
+        $data['add_script'] = 'app/order_script';
+        $data['user_chat'] = true;
+
+        // get chat
+        $data['chats'] = get_any_table_array(array('chat_id' => $this->user_id), 'chat');
+
+        if ($data['chats']) {
+            $data['xmsg'] = '1';
+        } else {
+            $data['xmsg'] = '0';
+        }
+
+        $this->load->view('app/dashboard', $data);
+    }
+
+    public function consult_doctor()
+    {
+        $this->load->view('app/consult_doctor');
+    }
 
 }

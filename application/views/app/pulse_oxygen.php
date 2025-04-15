@@ -83,7 +83,10 @@
                                         </div>
                                         <div class="card-body pt-5">
                                             <div class="position-relative">
-                                                <img src="assets-landing/img/health/pulse-tutorial.jpg" class="w-100 rounded" alt="Tutorial">
+                                                <video class="w-100 rounded" controls>
+                                                    <source src="<?=base_url('assets-landing/img/video/pulserate.mp4')?>" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
                                             </div>
                                             <div class="mt-5">
                                                 <div class="d-flex flex-column gap-5">

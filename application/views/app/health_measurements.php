@@ -54,13 +54,17 @@
                     <!-- Pulse Rate & Oxygen -->
                     <div class="col-md-4 mb-5">
                         <div class="card card-flush h-md-100 health-card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets-landing/img/health/pulse-oxygen.png" alt="Pulse Rate & Oxygen" style="width: 150px; height: auto; margin-bottom: 20px;">
-                                <h3 class="custom-font">Pulse Rate & Oxygen</h3>
-                                <div class="card-info mt-3 text-center">
-                                    <p>Record your heart rate and blood oxygen levels</p>
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <img src="<?=base_url('assets-landing/img/pulse_rate.png')?>" alt="Pulse Rate & Oxygen">
                                 </div>
-                                <div class="mt-4">
+                                <div class="content-container">
+                                    <h3 class="custom-font">Pulse Rate & Oxygen</h3>
+                                    <div class="card-info mt-3">
+                                        <p>Record your heart rate and blood oxygen levels</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
                                     <button onclick="navigateToMeasurement('pulse-oxygen')" class="btn btn-primary px-6">
                                         <i class="ki-duotone ki-arrow-right fs-2">
                                             <span class="path1"></span>
@@ -76,13 +80,17 @@
                     <!-- Blood Pressure -->
                     <div class="col-md-4 mb-5">
                         <div class="card card-flush h-md-100 health-card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets-landing/img/health/blood-pressure.png" alt="Blood Pressure" style="width: 150px; height: auto; margin-bottom: 20px;">
-                                <h3 class="custom-font">Blood Pressure</h3>
-                                <div class="card-info mt-3 text-center">
-                                    <p>Track your systolic and diastolic blood pressure</p>
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <img src="<?=base_url('assets-landing/img/blood_press.png')?>" alt="Blood Pressure">
                                 </div>
-                                <div class="mt-4">
+                                <div class="content-container">
+                                    <h3 class="custom-font">Blood Pressure</h3>
+                                    <div class="card-info mt-3">
+                                        <p>Track your systolic and diastolic blood pressure</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
                                     <button onclick="navigateToMeasurement('blood-pressure')" class="btn btn-primary px-6">
                                         <i class="ki-duotone ki-arrow-right fs-2">
                                             <span class="path1"></span>
@@ -98,13 +106,17 @@
                     <!-- Body Temperature -->
                     <div class="col-md-4 mb-5">
                         <div class="card card-flush h-md-100 health-card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets-landing/img/health/temperature.png" alt="Body Temperature" style="width: 150px; height: auto; margin-bottom: 20px;">
-                                <h3 class="custom-font">Body Temperature</h3>
-                                <div class="card-info mt-3 text-center">
-                                    <p>Record your body temperature readings</p>
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <img src="<?=base_url('assets-landing/img/body_temp.png')?>" alt="Body Temperature">
                                 </div>
-                                <div class="mt-4">
+                                <div class="content-container">
+                                    <h3 class="custom-font">Body Temperature</h3>
+                                    <div class="card-info mt-3">
+                                        <p>Record your body temperature readings</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
                                     <button onclick="navigateToMeasurement('body-temperature')" class="btn btn-primary px-6">
                                         <i class="ki-duotone ki-arrow-right fs-2">
                                             <span class="path1"></span>
@@ -120,13 +132,17 @@
                     <!-- Blood Glucose -->
                     <div class="col-md-4 mb-5">
                         <div class="card card-flush h-md-100 health-card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets-landing/img/health/glucose.png" alt="Blood Glucose" style="width: 150px; height: auto; margin-bottom: 20px;">
-                                <h3 class="custom-font">Blood Glucose</h3>
-                                <div class="card-info mt-3 text-center">
-                                    <p>Monitor your blood sugar levels</p>
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <img src="<?=base_url('assets-landing/img/blood_glucose.png')?>" alt="Blood Glucose">
                                 </div>
-                                <div class="mt-4">
+                                <div class="content-container">
+                                    <h3 class="custom-font">Blood Glucose</h3>
+                                    <div class="card-info mt-3">
+                                        <p>Monitor your blood sugar levels</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
                                     <button onclick="navigateToMeasurement('blood-glucose')" class="btn btn-primary px-6">
                                         <i class="ki-duotone ki-arrow-right fs-2">
                                             <span class="path1"></span>
@@ -142,13 +158,17 @@
                     <!-- Body Weight -->
                     <div class="col-md-4 mb-5">
                         <div class="card card-flush h-md-100 health-card">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img src="assets-landing/img/health/weight.png" alt="Body Weight" style="width: 150px; height: auto; margin-bottom: 20px;">
-                                <h3 class="custom-font">Body Weight</h3>
-                                <div class="card-info mt-3 text-center">
-                                    <p>Track your weight changes over time</p>
+                            <div class="card-body">
+                                <div class="image-container">
+                                    <img src="<?=base_url('assets-landing/img/body_weight.png')?>" alt="Body Weight">
                                 </div>
-                                <div class="mt-4">
+                                <div class="content-container">
+                                    <h3 class="custom-font">Body Weight</h3>
+                                    <div class="card-info mt-3">
+                                        <p>Track your weight changes over time</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
                                     <button onclick="navigateToMeasurement('body-weight')" class="btn btn-primary px-6">
                                         <i class="ki-duotone ki-arrow-right fs-2">
                                             <span class="path1"></span>
@@ -257,6 +277,45 @@
         border: 2px solid transparent;
         border-radius: 10px;
         height: 100%;
+        display: flex;
+    }
+
+    .health-card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .health-card .image-container {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .health-card .image-container img {
+        max-width: 150px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .health-card .content-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .health-card .button-container {
+        margin-top: auto;
     }
 
     .health-card:hover {

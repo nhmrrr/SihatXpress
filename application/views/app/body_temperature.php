@@ -89,17 +89,10 @@
                                         <div class="card-body pt-5">
                                             <!--begin::Video tutorial-->
                                             <div class="position-relative bg-dark rounded min-h-300px mb-5">
-                                                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                                                    <div class="symbol symbol-100px">
-                                                        <span class="symbol-label bg-light-success">
-                                                            <i class="ki-duotone ki-play fs-1 text-success">
-                                                                <span class="path1"></span>
-                                                                <span class="path2"></span>
-                                                            </i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <img src="assets/media/illustrations/temperature.jpg" class="w-100 h-100 object-fit-cover rounded" alt="Temperature Tutorial" />
+                                                <video class="w-100 h-100 object-fit-cover rounded" controls>
+                                                    <source src="<?=base_url('assets-landing/img/video/bodytemp.mp4')?>" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
                                             </div>
                                             <!--end::Video tutorial-->
                                         </div>

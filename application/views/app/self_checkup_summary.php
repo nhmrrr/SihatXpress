@@ -87,8 +87,8 @@
                                                 <p class="text-gray-600 fs-6 mb-5">Your latest health measurements show that all your vital signs are within normal ranges. Keep maintaining your healthy lifestyle!</p>
                                                 <div class="d-flex align-items-center">
                                                     <div class="symbol symbol-50px me-5">
-                                                        <span class="symbol-label bg-white">
-                                                            <i class="ki-duotone ki-health fs-2x text-primary">
+                                                        <span class="symbol-label bg-light-success">
+                                                            <i class="ki-duotone ki-shield-tick fs-2x text-success">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
                                                             </i>
@@ -145,8 +145,8 @@
                                             <div class="d-flex flex-column gap-5">
                                                 <div class="d-flex align-items-center">
                                                     <div class="symbol symbol-50px me-5">
-                                                        <span class="symbol-label bg-light-success">
-                                                            <i class="ki-duotone ki-heart-pulse fs-2x text-success">
+                                                        <span class="symbol-label bg-light-danger">
+                                                            <i class="ki-duotone ki-heart fs-2x text-danger">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
                                                             </i>
@@ -159,8 +159,8 @@
                                                 </div>
                                                 <div class="d-flex align-items-center">
                                                     <div class="symbol symbol-50px me-5">
-                                                        <span class="symbol-label bg-light-primary">
-                                                            <i class="ki-duotone ki-oxygen fs-2x text-primary">
+                                                        <span class="symbol-label bg-light-info">
+                                                            <i class="ki-duotone ki-abstract-24 fs-2x text-info">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
                                                             </i>
@@ -192,9 +192,10 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="symbol symbol-50px me-5">
                                                     <span class="symbol-label bg-light-warning">
-                                                        <i class="ki-duotone ki-blood-pressure fs-2x text-warning">
+                                                        <i class="ki-duotone ki-pulse fs-2x text-warning">
                                                             <span class="path1"></span>
                                                             <span class="path2"></span>
+                                                            <span class="path3"></span>
                                                         </i>
                                                     </span>
                                                 </div>
@@ -254,9 +255,10 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="symbol symbol-50px me-5">
                                                     <span class="symbol-label bg-light-info">
-                                                        <i class="ki-duotone ki-blood-drop fs-2x text-info">
+                                                        <i class="ki-duotone ki-chart-line fs-2x text-info">
                                                             <span class="path1"></span>
                                                             <span class="path2"></span>
+                                                            <span class="path3"></span>
                                                         </i>
                                                     </span>
                                                 </div>
@@ -285,9 +287,11 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="symbol symbol-50px me-5">
                                                     <span class="symbol-label bg-light-primary">
-                                                        <i class="ki-duotone ki-scale fs-2x text-primary">
+                                                        <i class="ki-duotone ki-abstract-26 fs-2x text-primary">
                                                             <span class="path1"></span>
                                                             <span class="path2"></span>
+                                                            <span class="path3"></span>
+                                                            <span class="path4"></span>
                                                         </i>
                                                     </span>
                                                 </div>
@@ -302,78 +306,26 @@
                             </div>
                             <!--end::Row-->
 
-                            <!-- Health Tips Card -->
-                            <div class="card card-flush mb-10">
-                                <div class="card-header pt-7">
-                                    <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bold text-gray-800">Health Tips</span>
-                                        <span class="text-gray-500 mt-1 fw-semibold fs-6">Recommendations based on your measurements</span>
-                                    </h3>
-                                </div>
-                                <div class="card-body pt-5">
-                                    <div class="row g-5">
-                                        <div class="col-md-4">
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-40px me-4">
-                                                    <span class="symbol-label bg-light-success">
-                                                        <i class="ki-duotone ki-heart-pulse fs-2 text-success">
-                                                            <span class="path1"></span>
-                                                            <span class="path2"></span>
-                                                        </i>
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <span class="fw-bold text-gray-800">Cardiovascular Health</span>
-                                                    <span class="text-gray-600">Continue regular exercise to maintain your healthy heart rate.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-40px me-4">
-                                                    <span class="symbol-label bg-light-warning">
-                                                        <i class="ki-duotone ki-blood-pressure fs-2 text-warning">
-                                                            <span class="path1"></span>
-                                                            <span class="path2"></span>
-                                                        </i>
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <span class="fw-bold text-gray-800">Blood Pressure</span>
-                                                    <span class="text-gray-600">Maintain a low-sodium diet to keep your blood pressure in check.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-40px me-4">
-                                                    <span class="symbol-label bg-light-info">
-                                                        <i class="ki-duotone ki-blood-drop fs-2 text-info">
-                                                            <span class="path1"></span>
-                                                            <span class="path2"></span>
-                                                        </i>
-                                                    </span>
-                                                </div>
-                                                <div class="d-flex flex-column">
-                                                    <span class="fw-bold text-gray-800">Blood Glucose</span>
-                                                    <span class="text-gray-600">Continue monitoring your blood sugar levels regularly.</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <!-- Consult Doctor Button -->
+                            <div class="row g-5 g-xl-10 mb-5 mb-xl-10">
+                                <div class="col-xl-12">
+                                    <div class="d-flex justify-content-end gap-3">
+                                        <a onclick="completeHealthCheck()" href="javascript:;" class="btn btn-lg btn-success px-8 py-4 shadow-lg d-flex align-items-center">
+                                            <i class="ki-duotone ki-check-circle fs-1 me-2">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>
+                                            <span class="fs-3">Complete Health Check</span>
+                                        </a>
+                                        <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-lg btn-primary px-8 py-4 shadow-lg d-flex align-items-center">
+                                            <i class="ki-duotone ki-message-text-2 fs-1 me-2">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>
+                                            <span class="fs-3">Consult Doctor</span>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <!--end::Health Tips Card-->
-
-                            <!-- Consult Doctor Button -->
-                            <div class="d-flex justify-content-center mt-5 mb-10">
-                                <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-primary btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
-                                    <i class="ki-duotone ki-message-text-2 fs-1 me-2">
-                                        <span class="path1"></span>
-                                        <span class="path2"></span>
-                                    </i>
-                                    <span class="fs-3">Consult a Doctor</span>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -442,5 +394,16 @@
             box-shadow: 0 2px 5px rgba(0, 158, 247, 0.3);
         }
     </style>
+
+    <script>
+        function completeHealthCheck() {
+            // Store completion status and redirect flag
+            localStorage.setItem('health_check_completed', 'true');
+            localStorage.setItem('redirect_to_main', 'true');
+            
+            // Redirect to health measurements
+            window.location.href = '<?=base_url('app')?>';
+        }
+    </script>
 </body>
 <!--end::Body--> 

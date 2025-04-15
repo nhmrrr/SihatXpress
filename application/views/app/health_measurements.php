@@ -184,17 +184,18 @@
                 
                 <!-- Consult Doctor Button -->
                 <div class="d-flex justify-content-center gap-3 mt-5 mb-10">
-                    <a href="<?=base_url('app/self_checkup_summary')?>" class="btn btn-success btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
-                        <i class="ki-duotone ki-document fs-1 me-2">
+                    <a href="<?=base_url('app/self_checkup_summary')?>" class="btn btn-success btn-lg px-8 py-4 shadow-lg d-flex align-items-center">
+                        <i class="ki-duotone ki-check-circle fs-1 me-2">
                             <span class="path1"></span>
                             <span class="path2"></span>
                         </i>
-                        <span class="fs-3">Summary Self Check Up</span>
+                        <span class="fs-3">View Health Summary</span>
                     </a>
-                    <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-primary btn-lg px-8 py-4 shadow-lg d-flex align-items-center rounded-pill">
-                        <i class="ki-duotone ki-message-text-2 fs-1 me-2">
+                    <a href="<?=base_url('app/consult_doctor')?>" class="btn btn-primary btn-lg px-8 py-4 shadow-lg d-flex align-items-center">
+                        <i class="ki-duotone ki-profile-circle fs-1 me-2">
                             <span class="path1"></span>
                             <span class="path2"></span>
+                            <span class="path3"></span>
                         </i>
                         <span class="fs-3">Consult a Doctor</span>
                     </a>

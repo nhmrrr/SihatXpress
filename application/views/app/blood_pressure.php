@@ -295,9 +295,11 @@
                                                 <div class="d-flex">
                                                     <div class="symbol symbol-30px me-3">
                                                         <span class="symbol-label bg-light-success">
-                                                            <i class="ki-duotone ki-blood fs-2 text-success">
+                                                            <i class="ki-duotone ki-thermometer fs-2 text-success">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
+                                                                <span class="path3"></span>
+                                                                <span class="path4"></span>
                                                             </i>
                                                         </span>
                                                     </div>

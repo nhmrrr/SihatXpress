@@ -297,9 +297,11 @@
                                                 <div class="d-flex">
                                                     <div class="symbol symbol-30px me-3">
                                                         <span class="symbol-label bg-light-primary">
-                                                            <i class="ki-duotone ki-scale fs-2 text-primary">
+                                                            <i class="ki-duotone ki-abstract-26 fs-2 text-primary">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
+                                                                <span class="path3"></span>
+                                                                <span class="path4"></span>
                                                             </i>
                                                         </span>
                                                     </div>

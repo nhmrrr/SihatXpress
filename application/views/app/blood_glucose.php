@@ -295,10 +295,7 @@
                                                 <div class="d-flex">
                                                     <div class="symbol symbol-30px me-3">
                                                         <span class="symbol-label bg-light-primary">
-                                                            <i class="ki-duotone ki-blood fs-2 text-primary">
-                                                                <span class="path1"></span>
-                                                                <span class="path2"></span>
-                                                            </i>
+                                                            <i class="fas fa-tint fs-2 text-primary"></i>
                                                         </span>
                                                     </div>
                                                     <div class="d-flex flex-column">

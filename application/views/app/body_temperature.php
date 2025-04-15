@@ -297,6 +297,8 @@
                                                             <i class="ki-duotone ki-thermometer fs-2 text-success">
                                                                 <span class="path1"></span>
                                                                 <span class="path2"></span>
+                                                                <span class="path3"></span>
+                                                                <span class="path4"></span>
                                                             </i>
                                                         </span>
                                                     </div>
